@@ -7,7 +7,12 @@ struct node{
   struct node* next;
 };
 
+//Pointer to the head node (index 1)
+
 struct node* head;
+
+
+//Function to insert element at nth position
 
 void Insert(int n ,int data){
     struct node* temp1 = (struct node*)malloc(sizeof(struct node));
@@ -26,6 +31,9 @@ void Insert(int n ,int data){
     temp1->next = temp2->next;
     temp2->next = temp1;
 }
+
+
+//Function to insert element at head position
 
 void InsertHead(int data)
 {
